@@ -46,7 +46,6 @@ ul{
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     padding: 24px;
-    border-radius: 8px 8px 0px 0px;
     box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
     border-radius: 8px 8px 0px 0px;
 }
@@ -181,4 +180,42 @@ ul{
 .more h6{
     display: block;
     margin: auto;
+}
+
+.stream-footer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full, .voice-off, .video, .settings{
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+    padding: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: linear .5s;
+}
+.stream-footer img{
+    width: 24px;
+    
+}
+
+.stream-footer ul{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stream-footer ul il{
+    margin-right: 24px;
+}
+
+.phone-off{
+    background-color: #FC5D5B;
+    border: 1px solid #FC5D5B;
+    box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+    padding: 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: linear .5s;
 }
