@@ -648,3 +648,132 @@ ul{
 
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .app-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content max-content max-content;
+    padding: 2rem 0px;
+  }
+
+  .left-side{
+    height: max-content;
+  }
+
+  .left-side .navigation{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+  .nav-link{
+    padding: 8px 24px;
+    margin-top: 0px;
+  }
+  .nav-link + .nav-link {
+    margin-top: 0px;
+  }
+  .nav-link svg{
+    width: 24px;
+  }
+  .stream-informations{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+  .infos-right{
+    grid-area: 2/1 !important;
+    text-align: right !important;
+  }
+  .stream-informations h3{
+    margin-bottom: 16px;
+  }
+  .stream-informations .infos-left{
+    margin-bottom: 16px;
+  }
+
+  .stream-body{
+    grid-template-rows: max-content max-content max-content;
+    padding: 1rem 0rem;
+  }
+
+  .stream-body .stream-left{
+    grid-area: 3/1;
+    grid-column: 1/2;
+    padding: 24px 32px 16px;
+    text-align: left;
+  }
+  .stream-body .stream-left h6{
+    margin: auto 0px;
+    color: black;
+    margin-left: 24px;
+  }
+
+  .stream-body .stream-left h6 br{
+    display: block;
+  }
+
+  .stream-body .stream-right{
+    grid-area: 3/1;
+    grid-column: 2/4;
+    margin-right: 0px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stream-body .stream-right ul{
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    grid-gap: 8px;
+    padding-left: 0px;
+  }
+  .stream-right img{
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .record-middle{
+    width: 100%;
+    padding: 8px;
+    margin-right: 16px;
+  }
+
+  .stream-footer{
+    display: none;
+  }
+
+  .stream-footer-M{
+    display: block;
+    grid-area: 2/1;
+    grid-column: 1/4;
+    margin-top: 24px;
+  }
+
+  .stream-footer-M img{
+    width: 24px;
+    
+}
+
+.stream-footer-M ul{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 64%;
+    text-align: center;
+}
+
+.stream-footer-M ul il{
+    margin-right: 0px;
+}
+
+.full, .voice-off, .video, .settings{
+  margin: auto !important;
+}
+
+.right-side{
+  margin-left: 0px;
+  padding-bottom: 24px;
+}
+}
