@@ -514,3 +514,32 @@ ul{
   background: #CBCFD9; 
   border-radius: 10px;
 }
+
+
+@media (min-width: 0px) and (max-width: 768px){
+  .app-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content max-content max-content;
+    padding: 2rem 0px;
+  }
+
+  .left-side{
+    height: max-content;
+  }
+
+  .left-side .navigation{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+  .nav-link{
+    padding: 8px 24px;
+    margin-top: 0px;
+  }
+  .nav-link + .nav-link {
+    margin-top: 0px;
+  }
+  .nav-link svg{
+    width: 24px;
+  }
+}
