@@ -169,12 +169,12 @@
                     <div class="chat-container">
                         <div class="chat-header">
                             <ul>
-                                <il class="chat-header-active">Messages</il>
-                                <il>Participants</il>
-                                <il>Notes</il>
+                                <il class="chat-header-active msg-btn">Messages</il>
+                                <il class="parti-btn">Participants</il>
+                                <il class="notes-btn">Notes</il>
                             </ul>
                         </div>
-                        <div class="chat-area">
+                        <div class="chat-area" id="chat">
                             <div class="message-wrapper">
                                 <div class="profile-picture">
                                     <img src="assets/images/user2.png" alt="Ryan Patrick">
@@ -256,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="chat-typing-area-wrapper">
+                        <div class="chat-typing-area-wrapper" id="send">
                             <div class="chat-typing-area">
                                 <input type="text" placeholder="Type your meesage..." class="chat-input">
                                 <label for="fileToUpload">
@@ -278,9 +278,92 @@
                                 </button>
                             </div>
                         </div>
+                        <div class="chat-area" id="participants">
+                            <h3 class="title">présentateur</h3>
+                            <div class="participants">
+                                <div class="participant">
+                                <img src="/assets/images/user.png" alt="">
+                                    <h3 class="participant-name">achraf abbassi</h3>
+                                    <ul style=" margin: auto 0px auto auto;">
+                                        <il class="active-micro">
+                                            <i class="fa fa-microphone" aria-hidden="true"></i>
+                                        </il>
+                                    </ul>
+                                </div>
+                                <h3 class="title">Participants</h3>
+                                <div class="participant">
+                                    <img src="/assets/images/user2.png" alt="">
+                                        <h3 class="participant-name">ryan patrick</h3>
+                                        <ul style="margin: auto 0px auto auto;">
+                                            <il class="desactive-micro">
+                                                <i class="fa fa-microphone-slash" aria-hidden="true"></i>
+                                            </il>
+                                            <il class="hand">
+                                                <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                                            </il>
+                                        </ul>
+                                </div>
+                                <div class="participant">
+                                    <img src="/assets/images/user3.png" alt="">
+                                        <h3 class="participant-name">andy will</h3>
+                                        <ul style="margin: auto 0px auto auto;">
+                                            <il class="desactive-micro">
+                                                <i class="fa fa-microphone-slash" aria-hidden="true"></i>
+                                            </il>
+                                        </ul>
+                                </div>
+                                <div class="participant">
+                                    <img src="/assets/images/user4.png" alt="">
+                                        <h3 class="participant-name">jessica bell</h3>
+                                        <ul style="margin: auto 0px auto auto;">
+                                            <il class="desactive-micro">
+                                                <i class="fa fa-microphone-slash" aria-hidden="true"></i>
+                                            </il>
+                                        </ul>
+                                </div>
+                                <div class="participant">
+                                <img src="/assets/images/user5.png" alt="">
+                                    <h3 class="participant-name">katie grane</h3>
+                                    <ul style="margin: auto 0px auto auto;">
+                                        <il class="desactive-micro">
+                                            <i class="fa fa-microphone-slash" aria-hidden="true"></i>
+                                        </il>
+                                    </ul>
+                                </div>
+                                <div class="participant">
+                                <img src="/assets/images/user6.png" alt="">
+                                    <h3 class="participant-name">adam malone</h3>
+                                    <ul style="margin: auto 0px auto auto;">
+                                        <il class="desactive-micro">
+                                            <i class="fa fa-microphone-slash" aria-hidden="true"></i>
+                                        </il>
+                                    </ul>
+                                </div>
+                                <div class="participant">
+                                <img src="/assets/images/user7.png" alt="">
+                                    <h3 class="participant-name">katie grane</h3>
+                                    <ul style="margin: auto 0px auto auto;">
+                                        <il class="desactive-micro">
+                                            <i class="fa fa-microphone-slash" aria-hidden="true"></i>
+                                        </il>
+                                    </ul>
+                                </div>
+                                <div class="participant">
+                                <img src="/assets/images/user8.png" alt="">
+                                    <h3 class="participant-name">adam malone</h3>
+                                    <ul style="margin: auto 0px auto auto;">
+                                        <il class="desactive-micro">
+                                            <i class="fa fa-microphone-slash" aria-hidden="true"></i>
+                                        </il>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="assets/js/index.js"></script>
     </body>
 </html>

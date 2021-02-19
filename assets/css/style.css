@@ -519,6 +519,63 @@ ul{
   display: none;
 }
 
+#participants{
+  display: none;
+}
+
+.participant{
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
+  margin-bottom: 24px;
+}
+#participants .title{
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 24px;
+}
+
+.participants img{
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  grid-column: 1/2;
+}
+.participants .participant-name{
+  grid-column: 2/3;
+  font-size: 14px;
+  margin: auto auto auto 16px;
+  text-transform: capitalize;
+}
+
+.participants .active-micro{
+  background-color: #00A389;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.participants i{
+  width: 24px;
+  font-size: 16px;
+}
+
+
+.participants .hand{
+  background-color: #00A389;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+}
+
+
+.participant ul il{
+  cursor: pointer;
+}
+
+
+
 
 @media (min-width: 0px) and (max-width: 767px){
   .app-container{
