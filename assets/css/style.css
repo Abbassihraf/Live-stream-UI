@@ -519,7 +519,7 @@ ul{
   display: none;
 }
 
-#participants{
+#participants, #notes{
   display: none;
 }
 
@@ -574,6 +574,104 @@ ul{
   cursor: pointer;
 }
 
+#notes ul{
+  padding-left: 0px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 88%;
+  margin: auto;
+  padding-bottom: 24px;
+  padding-top: 32px;
+}
+
+#notes ul .title{
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+#notes ul .new-note{
+  text-align: right;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+#notes ul .new-note span{
+  box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+  padding: 8px 16px;
+  border-radius: 24px;
+}
+
+.sticky-note {
+  width: 100%;
+  min-height: max-content;
+  padding: 1em;
+  font-size: 14px;
+  letter-spacing: 2px;
+  outline: none;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding-top: 40px;
+  text-align: justify;
+}
+.sticky-note::before {
+  content: "";
+  position: absolute;
+  display: block;
+}
+.sticky-note::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-width: 12px 12px 12px 12px;
+  border-style: solid;
+}
+.sticky-note.sticky-note-one {
+  background-color: #F3F5FD;
+  grid-area: sticker1;
+  padding-bottom: 40px;
+}
+.sticky-note.sticky-note-one::before {
+  background-color: rgba(196, 198, 245, 0.6);
+  width: 120px;
+  height: 35px;
+  left: 50%;
+  top: -15px;
+  transform: translateX(-50%) rotate(3deg);
+}
+.sticky-note.sticky-note-one::after {
+  left: 0;
+  border-top-color: #3D42DF;
+  border-right-color: #3D42DF;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+
+
+
+
+.notes
+{
+    background-image: -webkit-linear-gradient(left, white 10px, transparent 10px), -webkit-linear-gradient(right, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -moz-linear-gradient(left, white 10px, transparent 10px), -moz-linear-gradient(right, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -ms-linear-gradient(left, white 10px, transparent 10px), -ms-linear-gradient(right, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -o-linear-gradient(left, white 10px, transparent 10px), -o-linear-gradient(right, white 10px, transparent 10px), -o-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: linear-gradient(left, white 10px, transparent 10px), linear-gradient(right, white 10px, transparent 10px), linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-size: 100% 100%, 100% 100%, 100% 31px;
+    border: none;
+    line-height: 31px;
+    padding: 8px;
+    width:100%;
+    height:180px;
+}
+.notes:focus
+{
+    outline: none;
+}
 
 
 
